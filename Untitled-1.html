@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1> 
+  <i>Traffic Lights</i>
+<h1/>
+
+<p id="msg">Now you see me.<p/>
+
+<button type="button"
+onclick="document.getElementById('msg').innerHTML = 'totally gone!'">
+CLICK ME!!!!</button>
+
+<button type="button"
+onclick="document.getElementById('msg').innerHTML = 'Back again!'">
+click me</button>
+<script>alert(123)</script>
+        <form name="login">
+            Username<input type="text" name="userid"/>
+            Password<input type="password" name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                    window.open('target.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+
+</body>
+</html>
